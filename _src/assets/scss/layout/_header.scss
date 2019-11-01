@@ -1,17 +1,64 @@
 .header {
     background-image: url(../images/background-red.jpg);
     border: solid 2px black;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: 0rem;
 
     &__title {
-        color: white;
+        // border: solid 2px #fabada;
+        color:$secondColor;
+        font-size: 3.6rem;
+        font-family: $fontFamily;
         text-transform: capitalize;
-        
+        animation-name: rotate;
+        animation-duration: 3s;
+        // animation-iteration-count: infinite;
+    }
+    @keyframes rotate {
+        from {
+          transform: perspective(100px) rotateY(0deg);
+        }
+        to {
+            color: $fontColor;
+            transform: perspective(100px) rotateY(360deg);
+        }
 
+      }
+    &__menu {
+        &__options {
+        font-family: $fontFamily;
+        // border: solid 1px greenyellow;
+        font-size: 1.6rem;
+        width: 15.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+        list-style: none;
+            &__blog {
+            // border: 0.1rem solid blue;
+                &--link {
+                    &:hover {
+                    color: $fontColor;
+                    }
+                }
+        }
+            &__contact {
+            // border: 0.1rem solid blue;
+            &--link {
+                &:hover {
+                color: $fontColor;
+            }
+        }
+    }   
+        }
     }
 }

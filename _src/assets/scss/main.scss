@@ -5,7 +5,21 @@
 @import 'layout/header';
 @import 'layout/footer';
 
+/* 1rem = 10px */
+html {
+	font-size: 62.5%;
+}
 body {
 	margin: 0;
 	height: 100vh;
+	background: whitesmoke;
+}
+a {
+	&:link,
+	&:visited,
+	&:hover,
+	&:active {
+	  text-decoration: none;
+	  color:$secondColor;
+	}
 }
