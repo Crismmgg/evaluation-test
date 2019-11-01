@@ -1,0 +1,17 @@
+.header {
+    background-image: url(../images/background-red.jpg);
+    border: solid 2px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__title {
+        color: white;
+        text-transform: capitalize;
+        
+
+    }
+}
