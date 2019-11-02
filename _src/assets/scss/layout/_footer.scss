@@ -1,0 +1,53 @@
+.footer__container{
+    border-top: solid $fontColor 2px;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    &__dot {
+    background: $fontColor;
+    color: $secondColor;
+    // border: solid 2px greenyellow;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2.6rem;
+    font-family: $fontFamily;
+    text-align: center;
+    padding: 0.9rem;
+    position: relative;
+    transform: translate(0rem, -4.5rem);
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+     @keyframes bounce {
+         0% {
+            // position: absolute;
+             transform: translateY(-80px);
+         }
+          50% {
+            //  position: absolute;
+              transform: translateY(-45px);
+        }
+         100% {
+            // position: absolute;
+             transform: translateY(-80px);
+         }
+ }
+    &__copy {
+        font-family: $fontFamily;
+        font-size: 1.6rem;
+    } 
+}
+    @media all and (min-width: 768px) {
+        .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+        }
+    }
+
