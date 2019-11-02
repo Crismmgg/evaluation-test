@@ -1,6 +1,6 @@
 .home {
     background: $secondColor;
-    border: coral solid 2px;
+    // border: coral solid 2px;
 }
     .main__container {
     width: 100vw;
@@ -12,8 +12,8 @@
         &__sec2,
         &__sec3,
         &__sec4 {
-            // border: cornflowerblue solid 2px;
-            padding: 2rem;
+            border-radius: 2rem;
+            padding: 4rem;
             font-family: $fontFamily;
             font-size: 2.0rem;
             color: $fontColor;
@@ -44,7 +44,7 @@
 }
 
   
- @media all and (min-width: 768px) {
+ @media all and (min-width: 76.8rem) {
 
     .main__container {
         width: 100vw;
