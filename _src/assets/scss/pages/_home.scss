@@ -1,0 +1,58 @@
+.home {
+    background: $secondColor;
+    border: coral solid 2px;
+    height: 100vh;
+    width: 100vw;
+}
+    .main__container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 7rem 2rem;
+        &__sec1,
+        &__sec2,
+        &__sec3,
+        &__sec4 {
+            border: cornflowerblue solid 2px;
+            padding: 2rem;
+            font-family: $fontFamily;
+            font-size: 2.0rem;
+            color: $fontColor;
+            width: 100%; 
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        
+    
+        &__title {
+            padding-bottom: 2rem;
+        }
+        &__images {
+            width: 17rem;
+            height: 10rem;
+            border-top: 5rem;
+            border-radius: 2rem;
+            transition: all 1s ease-in-out;
+        
+            &:hover {
+            width: 23rem;
+            height: 16rem;
+        }
+        }
+        }
+}
+
+  
+ @media all and (min-width: 768px) {
+
+    .main__container {
+        width: 100vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        padding: 7rem 2rem;
+
+}
+}
