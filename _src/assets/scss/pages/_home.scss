@@ -38,18 +38,18 @@
             &:hover {
             width: 23rem;
             height: 16rem;
+            }
         }
-        }
-        }
+    }
 }
   
  @media all and (min-width: 768px) {
-
+     .main__container {
         width: 100vw;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         padding: 7rem 2rem;
     }
-
 }
+
     
