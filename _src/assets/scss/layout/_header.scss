@@ -1,4 +1,4 @@
-.header {
+.header__container{
     background-image: url(../images/background-red.jpg);
     border: solid 2px black;
     width: 100vw;
@@ -36,14 +36,14 @@
         font-family: $fontFamily;
         // border: solid 1px greenyellow;
         font-size: 1.6rem;
-        width: 15.5rem;
+        width: 30rem;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         text-transform: uppercase;
         list-style: none;
-            &__blog {
+            &__end {
             // border: 0.1rem solid blue;
                 &--link {
                     &:hover {
