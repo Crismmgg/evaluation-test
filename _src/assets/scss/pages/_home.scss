@@ -1,8 +1,6 @@
 .home {
     background: $secondColor;
     border: coral solid 2px;
-    height: 100vh;
-    width: 100vw;
 }
     .main__container {
     width: 100vw;
@@ -14,13 +12,13 @@
         &__sec2,
         &__sec3,
         &__sec4 {
-            border: cornflowerblue solid 2px;
+            // border: cornflowerblue solid 2px;
             padding: 2rem;
             font-family: $fontFamily;
             font-size: 2.0rem;
             color: $fontColor;
             width: 100%; 
-            height: 100%;
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
